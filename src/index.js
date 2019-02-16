@@ -5,7 +5,7 @@ import 'popper.js/dist/popper.js';
 import 'jquery/dist/jquery.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import './index.css';
-import Home from './Home';
+import '././css/index.css';
+import Home from './js/Home';
 
 ReactDOM.render(<Home />, document.getElementById('root'));
