@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+import aPlus from "../images/certifications/a_plus_comp_maintenance.png";
+import program from "../images/certifications/comp_programming.png";
+import info from "../images/certifications/information_tech_pathway.png";
+import network from "../images/certifications/network_fundamentals.png";
+import pcpro from "../images/certifications/pc_pro.png"
+
 class Home extends Component {
   render() {
     return (
@@ -17,23 +23,23 @@ class Home extends Component {
                     <div className="carousel-inner">
 
                         <div className="carousel-item active">
-                            <img className="img-fluid" src="images/certifications/a_plus_comp_maintenance.png"/>
+                            <img className="img-fluid" src={aPlus}/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src="images/certifications/comp_programming.png"/>
+                            <img className="img-flud" src={program}/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src="images/certifications/information_tech_pathway.png"/>
+                            <img className="img-flud" src={info}/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src="images/certifications/network_fundamentals.png"/>
+                            <img className="img-flud" src={network}/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src="images/certifications/pc_pro.png"/>
+                            <img className="img-flud" src={pcpro}/>
                         </div>
 
                         {/* Carousel Control Buttons */}
