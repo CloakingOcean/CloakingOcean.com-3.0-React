@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # custom
-src/style.css
+src/css/style.css
 .sass-cache
