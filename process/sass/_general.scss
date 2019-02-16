@@ -1,0 +1,52 @@
+body {
+    background-color: $color-backgrounds;
+}
+
+* {
+    color: $main;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+    margin: 0 auto 1rem auto;
+    border-radius: 1rem;
+    background-color: $accents;
+    display: inline-block;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    background-color: $dark;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid 5px #343a40;
+}
+
+h3, h5 {
+    font-style: italic;
+}
+
+p {
+    text-indent: 1.2rem;
+}
+
+section {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    border: solid 5px $dark;
+    border-radius: 20px;
+    background-image: linear-gradient($lighter-dark, $dark);
+}
+
+a {
+    color: $links;
+}
+
+a:hover {
+    color: $links-hover;
+}

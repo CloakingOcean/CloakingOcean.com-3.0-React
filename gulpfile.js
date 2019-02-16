@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     webserver = require('gulp-webserver');
 
 gulp.task('js', function() {
-  return gulp.src('builds/cloakingocean.com/js/myscript.js')
+  return gulp.src('src/*.js')
     .pipe(jshint('./.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -19,21 +19,21 @@ gulp.task('sass', function () {
         console.error('Error!', err.message);
     })
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('builds/cloakingocean.com/css'));
+    .pipe(gulp.dest('src'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('builds/cloakingocean.com/js/**/*', ['js']);
+  gulp.watch('src/*.js', ['js']);
   gulp.watch(['process/sass/**/*'], ['sass']);
 });
 
-gulp.task('webserver', function() {
-    gulp.src('builds/cloakingocean.com/')
-        .pipe(webserver({
-            livereload: true,
-            open: true
-        }));
-});
+// gulp.task('webserver', function() {
+//     gulp.src('builds/cloakingocean.com/')
+//         .pipe(webserver({
+//             livereload: true,
+//             open: true
+//         }));
+// });
 
-gulp.task('default', ['sass', 'watch', 'webserver']);
+gulp.task('default', ['sass', 'watch']); //Removed webserver because react has one
 gulp.task('build', ['sass']);
