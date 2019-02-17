@@ -11,12 +11,12 @@ class Java extends Component {
     return (
         <div>
             {/* Breakpoint debugging tool to be filled in with javascript from writeBreakpoint() method */}
-            <header class="header" data-id="1">
+            <header className="header" data-id="1">
                 <!-- To be filled in with javascript from writeHeader() method-->
             </header>
 
-            <div class="container">
-                <div class="row">
+            <div className="container">
+                <div className="row">
                     <h1>Java | My First Progrmaming Language!</h1>
                 </div>
                 <section>
@@ -43,8 +43,8 @@ class Java extends Component {
                     </p>
                 </section><!-- Java Introduction Section -->
 
-                <div class="carousel-item active">
-                    <img class="carousel img-fluid" src="images/examples/Space Invaders/space-invaders-demo.gif"/>
+                <div className="carousel-item active">
+                    <img className="carousel img-fluid" src="images/examples/Space Invaders/space-invaders-demo.gif"/>
                 </div><!-- Carousel Item -->
 
                 </br>
@@ -60,8 +60,8 @@ class Java extends Component {
 
                 </br>
 
-                <div class="carousel-item active">
-                    <img class="carousel img-fluid" src="images/examples/Whewheo/whewheo-demonatration.gif"/>
+                <div className="carousel-item active">
+                    <img className="carousel img-fluid" src="images/examples/Whewheo/whewheo-demonatration.gif"/>
                 </div><!-- Carousel Item -->
 
                 <section>
