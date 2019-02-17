@@ -19,7 +19,7 @@ gulp.task('sass', function () {
         console.error('Error!', err.message);
     })
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('src'));
+    .pipe(gulp.dest('src/css'));
 });
 
 gulp.task('watch', function() {
