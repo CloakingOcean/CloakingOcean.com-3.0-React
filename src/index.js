@@ -7,5 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import '././css/index.css';
 import Home from './js/Home';
+import Java from './js/Java';
 
 ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<Java />, document.getElementById('root'));

@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 
-import aPlus from "../images/certifications/a_plus_comp_maintenance.png";
-import program from "../images/certifications/comp_programming.png";
-import info from "../images/certifications/information_tech_pathway.png";
-import network from "../images/certifications/network_fundamentals.png";
-import pcpro from "../images/certifications/pc_pro.png"
+import spaceInvaders from "../images/examples/Space Invaders/space-invaders-demo.gif";
+import whewheo from "../images/examples/Whewheo/whewheo-demonstration.gif";
+
 
 class Java extends Component {
   render() {
     return (
         <div>
-            {/* Breakpoint debugging tool to be filled in with javascript from writeBreakpoint() method */}
             <header className="header" data-id="1">
-                <!-- To be filled in with javascript from writeHeader() method-->
             </header>
 
             <div className="container">
@@ -41,28 +37,28 @@ class Java extends Component {
                         To this day Java is my most influential programming language. However, Java development has been put to the backburner recently because I've been trying to
                         increase my understanding of other computer technologies. Below is one of my very first and very rough projects. I was attempting to make a space invader game.
                     </p>
-                </section><!-- Java Introduction Section -->
+                </section>
 
                 <div className="carousel-item active">
-                    <img className="carousel img-fluid" src="images/examples/Space Invaders/space-invaders-demo.gif"/>
-                </div><!-- Carousel Item -->
+                    <img className="carousel img-fluid" src={spaceInvaders} />
+                </div>
 
-                </br>
+                <br />
                 <section>
                     <h2>Minecraft (Bukkit/Spigot)</h2>
                     <p>
                         As mentioned before, Minecraft was my starting drive to learn to program in general. The server API was exciting, new, and vast.
-                        Instantly, I jumped onto the <a href="https://bukkit.org/forums/ target="_blank"">Bukkit Forums</a> to find anyone willing to let me attempt
+                        Instantly, I jumped onto the <a href="https://bukkit.org/forums/" target="_blank">Bukkit Forums</a> to find anyone willing to let me attempt
                         plugin development on their server. For a few years, I worked on personal and small client projects to experiment with the API
                         and gain experience in the process. Eventually, I was hired for a time at <a href="https://www.superleague.com/" target="_blank">Super League Gaming</a>! What follows is a look into one of my favorite personal projects.
                     </p>
-                </section><!-- Minecraft Section -->
+                </section>
 
-                </br>
+                <br />
 
                 <div className="carousel-item active">
-                    <img className="carousel img-fluid" src="images/examples/Whewheo/whewheo-demonatration.gif"/>
-                </div><!-- Carousel Item -->
+                    <img className="carousel img-fluid" src={whewheo} />
+                </div>
 
                 <section>
                     <h2>Whewheo ~ Advanced Modular Teleportation</h2>
@@ -76,8 +72,8 @@ class Java extends Component {
                         This was one of my most challenging projects and one that I'm very proud of! However, I do plan to improve upon many things
                         in the future.
                     </p>
-                </section> <!-- Whewheo Section -->
-            </div><!-- Container -->
+                </section>
+            </div>
         </div>
     );
   }
