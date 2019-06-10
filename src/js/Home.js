@@ -23,23 +23,23 @@ class Home extends Component {
                     <div className="carousel-inner">
 
                         <div className="carousel-item active">
-                            <img className="img-fluid" src={aPlus}/>
+                            <img className="img-fluid" src={aPlus} alt="A Plus Certificate"/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src={program}/>
+                            <img className="img-flud" src={program} alt="Java Level Two Programming Certificate"/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src={info}/>
+                            <img className="img-flud" src={info} alt="Information Technology Pathways Certificate"/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src={network}/>
+                            <img className="img-flud" src={network} alt="Network Fundamentals Certificate"/>
                         </div>
 
                         <div className="carousel-item">
-                            <img className="img-flud" src={pcpro}/>
+                            <img className="img-flud" src={pcpro} alt="PC Pro Certificate"/>
                         </div>
 
                         {/* Carousel Control Buttons */}

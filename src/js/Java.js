@@ -9,6 +9,7 @@ class Java extends Component {
     return (
         <div>
             <header className="header" data-id="1">
+                {/* To be filled in with javascript from writeHeader() method */}
             </header>
 
             <div className="container">
@@ -26,12 +27,12 @@ class Java extends Component {
                     </p>
                     <p>
                         I started watching youtube tutorials about programming with Bukkit.
-                        <a href="https://www.youtube.com/watch?v=CrMGokrBHdg&list=PL4A0C6138F3F5AA41" target="_blank">TheBCBroz</a> was my very first programming
+                        <a href="https://www.youtube.com/watch?v=CrMGokrBHdg&list=PL4A0C6138F3F5AA41" target="_blank" rel="noopener noreferrer">TheBCBroz</a> was my very first programming
                         teacher. I quickly learned Bukkit was only a small part of a gigantic programming language known as Java. To be successful
                         in this endeavor, I needed to learn Java's core as well as possible.
                     </p>
                     <p>
-                        <a href="https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28" target="_blank">TheNewBoston</a>'s Java tutorials were a massive help,
+                        <a href="https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28" target="_blank" rel="noopener noreferrer">TheNewBoston</a>'s Java tutorials were a massive help,
                         and eventually, I enrolled in a Java programming class at my high school as well! That's where I learned many important programming concepts such as
                         object-oriented programming, execution time, and boolean logic. I experimented by creating a handful of desktop applications using spring and other API.
                         To this day Java is my most influential programming language. However, Java development has been put to the backburner recently because I've been trying to
@@ -40,7 +41,7 @@ class Java extends Component {
                 </section>
 
                 <div className="carousel-item active">
-                    <img className="carousel img-fluid" src={spaceInvaders} />
+                    <img className="carousel img-fluid" src={spaceInvaders} alt="Space Invaders Demo"/>
                 </div>
 
                 <br />
@@ -48,16 +49,16 @@ class Java extends Component {
                     <h2>Minecraft (Bukkit/Spigot)</h2>
                     <p>
                         As mentioned before, Minecraft was my starting drive to learn to program in general. The server API was exciting, new, and vast.
-                        Instantly, I jumped onto the <a href="https://bukkit.org/forums/" target="_blank">Bukkit Forums</a> to find anyone willing to let me attempt
+                        Instantly, I jumped onto the <a href="https://bukkit.org/forums/" target="_blank" rel="noopener noreferrer">Bukkit Forums</a> to find anyone willing to let me attempt
                         plugin development on their server. For a few years, I worked on personal and small client projects to experiment with the API
-                        and gain experience in the process. Eventually, I was hired for a time at <a href="https://www.superleague.com/" target="_blank">Super League Gaming</a>! What follows is a look into one of my favorite personal projects.
+                        and gain experience in the process. Eventually, I was hired for a time at <a href="https://www.superleague.com/" target="_blank" rel="noopener noreferrer">Super League Gaming</a>! What follows is a look into one of my favorite personal projects.
                     </p>
                 </section>
 
                 <br />
 
                 <div className="carousel-item active">
-                    <img className="carousel img-fluid" src={whewheo} />
+                    <img className="carousel img-fluid" src={whewheo} alt="Whewheo Teleportation Demo"/>
                 </div>
 
                 <section>
@@ -68,7 +69,7 @@ class Java extends Component {
                         as the particle generator used for sending or receiving animations are all customizable. Whewheo's aesthetic teleportation
                         system has been designed from the beginning to be easily added upon to enable more diverse options! I believe this project
                         was initially requested by an individual who wanted it to be available for everyone.
-                        <a href="https://github.com/CloakingOcean/Whewheo" target="_blank">Whewheo's Source Code</a> is available on my GitHub page!
+                        <a href="https://github.com/CloakingOcean/Whewheo" target="_blank" rel="noopener noreferrer">Whewheo's Source Code</a> is available on my GitHub page!
                         This was one of my most challenging projects and one that I'm very proud of! However, I do plan to improve upon many things
                         in the future.
                     </p>
