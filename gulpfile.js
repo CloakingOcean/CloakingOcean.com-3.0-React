@@ -23,8 +23,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/*.js', ['js']);
-  gulp.watch(['process/sass/**/*'], ['sass']);
+  gulp.watch('src/*.js', gulp.series('js'));
+  gulp.watch('process/sass/**/*', gulp.series('sass'));
 });
 
 // gulp.task('webserver', function() {
@@ -35,5 +35,5 @@ gulp.task('watch', function() {
 //         }));
 // });
 
-gulp.task('default', ['sass', 'watch']); //Removed webserver because react has one
-gulp.task('build', ['sass']);
+gulp.task('default', gulp.series('sass', 'watch')); //Removed webserver because react has one
+gulp.task('build', gulp.series('sass'));
