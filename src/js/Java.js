@@ -40,9 +40,7 @@ class Java extends Component {
                     </p>
                 </section>
 
-                <div className="carousel-item active">
-                    <img className="carousel img-fluid" src={spaceInvaders} alt="Space Invaders Demo"/>
-                </div>
+                <img className="img-fluid" src={spaceInvaders} alt="Space Invaders Demo"/>
 
                 <br />
                 <section>
@@ -57,9 +55,7 @@ class Java extends Component {
 
                 <br />
 
-                <div className="carousel-item active">
-                    <img className="carousel img-fluid" src={whewheo} alt="Whewheo Teleportation Demo"/>
-                </div>
+                <img className="img-fluid" src={whewheo} alt="Whewheo Teleportation Demo"/>
 
                 <section>
                     <h2>Whewheo ~ Advanced Modular Teleportation</h2>
