@@ -19,9 +19,9 @@ class Unity extends Component {
                     <section>
                         <h2>Spy Hop Introduction</h2>
                         <p>
-                            I first heard of <a href="https://spyhop.org/" target="_blank" rel="noopener noreferrer">Spy Hop</a> when I was in elementary school from an after-school teacher who had noticed
+                            I first heard of{' '}<a href="https://spyhop.org/" target="_blank" rel="noopener noreferrer">Spy Hop</a> when I was in elementary school from an after-school teacher who had noticed
                             my computer skills. However, the courses she informed me about were too expensive to join at that time. Fast forward to my high school
-                            years, and once again I was recommended to participate in Spy Hop, this time by my programming teacher. After learning more about their
+                            years, and once again I was recommended to participate in Spy Hop, this time by my programming teacher. After learning more about their{' '}
                             <a href="https://spyhop.org/apprenticeship-program/" target="_blank" rel="noopener noreferrer">Apprenticeship Programs</a>, I immediately sent in an application!
                         </p>{/* First impressions of Spy Hop */}
                     </section>
@@ -30,7 +30,7 @@ class Unity extends Component {
                         <p>
                             The winter season of 2014 was my first experience working with Spy Hop. My initial goals were quite ambitious for a novice programmer, and
                             I quickly learned game development takes much more time and effort than I realized. Either way, I was excited to get some experience
-                            creating games with an actual team! I was soon introduced to the game engine, <a href="https://unity3d.com/unity" target="_blank" rel="noopener noreferrer">Unity</a>, which Spy Hop uses for their design apprenticeship programs.
+                            creating games with an actual team! I was soon introduced to the game engine,{' '}<a href="https://unity3d.com/unity" target="_blank" rel="noopener noreferrer">Unity</a>, which Spy Hop uses for their design apprenticeship programs.
                         </p>{/* First experience with Spy Hop */}
         
                         <p>
@@ -43,7 +43,7 @@ class Unity extends Component {
         
                         <p>
                             The concept of the first game I participated in was an endless scroller that taught the player which foods are beneficial and which foods are unhealthy. Because Spy Hop
-                            is supported by community contributions, the games it produces have an educational aspect. Initially, we started off with a package from the
+                            is supported by community contributions, the games it produces have an educational aspect. Initially, we started off with a package from the{' '}
                             <a href="https://www.assetstore.unity3d.com/" target="_blank" rel="noopener noreferrer">Unity Asset Store</a> which was very polished. This is a common practice to use available assets to focus the team's time
                             on other parts of the project. Unfortunately, it was coded in C#, which was not widely known to our development team, and the complexity and relationships of the
                             package made it very hard to edit individual scripts without affecting the whole package. Because of this, we decided to start from scratch and create all of the game's components
@@ -55,7 +55,7 @@ class Unity extends Component {
                         <h2>Fall 2014 Session</h2>
                         <p>
                             The next season I participated in was the fall season of 2014. For this project, we decided to create a 2D exploration game which teaches the player how antibodies in our bodies
-                            work. Similar to the first game we created, we started off with a package from the asset store known as <a href="https://assetstore.unity.com/packages/tools/level-design/ferr2d-terrain-tool-11653" target="_blank" rel="noopener noreferrer">Ferr2D</a>. This package included all the fluid movement and collision of the main character along
+                            work. Similar to the first game we created, we started off with a package from the asset store known as{' '}<a href="https://assetstore.unity.com/packages/tools/level-design/ferr2d-terrain-tool-11653" target="_blank" rel="noopener noreferrer">Ferr2D</a>. This package included all the fluid movement and collision of the main character along
                             with many different available terrains. We had much more success editing this package to our needs. The player is able to transform into different antibodies at will. To
                             progress and defeat all enemies in the player's path, they must change into the antibody that can neutralize the threat. Attempting to absorb an enemy while being the wrong antibody results in damage to the player.
                             I designed and implemented the GUI <i>(Graphical User Interface)</i> that allows the player to switch between antibodies. Once again, I don't have the original files to create a demonstration of the project, but I will update this
@@ -78,12 +78,10 @@ class Unity extends Component {
                         <p>
                             I was very impressed by the speed of the team considering our smaller time window!
                             The significant parts of the project I worked on were the map layout as well as combining all of the artwork and scripts together! I also threw in some control tutorial animations throughout the map to help the player understand how the controls work! Below is
-                            a small sample of the Boston Tea Party area! You can download <a href="https://drive.google.com/file/d/1Ux07V-mTiJdyO_h8Wwd0B_VtnLR_P2wm/view" target="_blank" rel="noopener noreferrer">History Mystery</a> here!
+                            a small sample of the Boston Tea Party area! You can download{' '}<a href="https://drive.google.com/file/d/1Ux07V-mTiJdyO_h8Wwd0B_VtnLR_P2wm/view" target="_blank" rel="noopener noreferrer">History Mystery</a> here!
                         </p>{/*<!-- Third Game */}
                     </section>{/* Unity Introduction Section */}
-                    <div className="carousel-item active">
-                        <img className="carousel img-fluid" src={historyDemo} alt="History Mystery Demo Animation"/>
-                    </div>{/* Carousel Item */}
+                    <img className="centered-img" src={historyDemo} alt="History Mystery Demo Animation"/>
                 </div>{/* Container */}
         
                 {/* Optional JavaScript */}
