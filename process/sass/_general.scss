@@ -50,3 +50,11 @@ a {
 a:hover {
     color: $links-hover;
 }
+
+
+img.img-fluid {
+    margin: 0px auto 15px auto;
+    display: block;
+    border: solid 5px #343a40;
+    border-radius: 20px;
+}
