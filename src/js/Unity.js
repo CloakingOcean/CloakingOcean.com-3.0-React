@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import historyDemo from "../images/examples/History Mystery/history-mystery-demo.gif";
+
 class Unity extends Component {
     
     render() {
@@ -82,7 +84,7 @@ class Unity extends Component {
                         </p>{/*<!-- Third Game */}
                     </section>{/* Unity Introduction Section */}
                     <div className="carousel-item active">
-                        <img className="carousel img-fluid" src="images/examples/History Mystery/history-mystery-demo.gif" alt="History Mystery Demo Animation"/>
+                        <img className="carousel img-fluid" src={historyDemo} alt="History Mystery Demo Animation"/>
                     </div>{/* Carousel Item */}
                 </div>{/* Container */}
         
