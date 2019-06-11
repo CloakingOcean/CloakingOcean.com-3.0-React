@@ -6,8 +6,6 @@ class Unity extends Component {
     
     render() {
         return (
-            
-            
             <div>
                 {/* Breakpoint debugging tool to be filled in with javascript from writeBreakpoint() method */}
                 <header className="header" data-id="2">
