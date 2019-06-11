@@ -42,7 +42,6 @@ class Java extends Component {
 
                 <img className="img-fluid" src={spaceInvaders} alt="Space Invaders Demo"/>
 
-                <br />
                 <section>
                     <h2>Minecraft (Bukkit/Spigot)</h2>
                     <p>
@@ -52,8 +51,6 @@ class Java extends Component {
                         and gain experience in the process. Eventually, I was hired for a time at <a href="https://www.superleague.com/" target="_blank" rel="noopener noreferrer">Super League Gaming</a>! What follows is a look into one of my favorite personal projects.
                     </p>
                 </section>
-
-                <br />
 
                 <img className="img-fluid" src={whewheo} alt="Whewheo Teleportation Demo"/>
 
