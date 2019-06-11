@@ -37,10 +37,9 @@ section {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 15px;
-    border: solid 5px $dark;
-    border-radius: 20px;
+    margin-bottom: $btm_tiny_margin;
     background-image: linear-gradient($lighter-dark, $dark);
+    @include small_border;
 }
 
 a {
@@ -49,4 +48,12 @@ a {
 
 a:hover {
     color: $links-hover;
+}
+
+.centered-img {
+    @extend .mx-auto;
+    @extend .d-block;
+    @extend .img-fluid;
+    @include small_border;
+    margin-bottom: $btm_tiny_margin;
 }
