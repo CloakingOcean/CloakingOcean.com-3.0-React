@@ -39,9 +39,8 @@ class Java extends Component {
                         increase my understanding of other computer technologies. Below is one of my very first and very rough projects. I was attempting to make a space invader game.
                     </p>
                 </section>
-
-                <img className="img-fluid" src={spaceInvaders} alt="Space Invaders Demo"/>
-
+                <img className="centered-img" src={spaceInvaders} alt="Space Invaders Demo"/>
+        
                 <section>
                     <h2>Minecraft (Bukkit/Spigot)</h2>
                     <p>
@@ -52,7 +51,7 @@ class Java extends Component {
                     </p>
                 </section>
 
-                <img className="img-fluid" src={whewheo} alt="Whewheo Teleportation Demo"/>
+                <img className="centered-img" src={whewheo} alt="Whewheo Teleportation Demo"/>
 
                 <section>
                     <h2>Whewheo ~ Advanced Modular Teleportation</h2>

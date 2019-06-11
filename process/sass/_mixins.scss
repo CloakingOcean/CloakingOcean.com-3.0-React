@@ -1,0 +1,4 @@
+@mixin small-border {
+    border: solid 5px $dark;
+    border-radius: 20px;
+}
