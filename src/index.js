@@ -4,8 +4,8 @@ import 'popper.js/dist/popper.js';
 import 'jquery/dist/jquery.js';
 
 import '././css/index.css';
-// import Home from './js/Home';
-import Java from './js/Java';
+
+import App from './js/App';
 
 
-ReactDOM.render(<Java />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
