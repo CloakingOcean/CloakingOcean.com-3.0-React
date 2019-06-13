@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 import LinkItem from './LinkItem';
+import Logo from './Logo';
+import Navigation from './Navigation';
 
 class AppRouter extends Component {
   
@@ -15,17 +17,11 @@ class AppRouter extends Component {
     
     var header = 
     <nav className='navbar bg-dark navbar-dark navbar-expand'>
-    
-        <div className='container-fluid'>
-            <div className='navbar-header'>
-                <a href='index.html'><img className='logo navbar-brand' alt='Cloaking Ocean Logo'/> src='images/logo/logo-white.svg'></a>
-            </div>
-        </div>
-        <div className='container-fluid' width='100vw'>
-            <ul className='navbar-nav justify-content-end ml-auto mr-auto ml-sm-auto mr-sm-0'>
-                {linkList}
-            </ul>
-        </div>
+        
+        <Logo />
+        
+        <Navigation linkList={linkList} />
+        
     </nav>;
     
     var currentPage;
