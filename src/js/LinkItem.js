@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 class LinkItem extends Component {
     
@@ -11,21 +11,26 @@ class LinkItem extends Component {
         if (current === true) {
             return (
                 <li key={name + "-list-item"}>
-                    <a key={name} className='nav-item nav-link disabled' href='#'>
-                        {name}
-                    </a>
-                </li>
-            );
-        } else {
-            return (
-                <li key={name + "-list-item"}>
-                    <Link to={url} className='nav-item nav-link' key={name}>
+                    <Link to="/" className='nav-item nav-link text-muted' disabled='disabled'>
                         {name}
                     </Link>
                 </li>
+            );
+        } else {
+            
+            return (
+                
+                <li key={name + "-list-item"}>
+                    <Link to={url} className='nav-item nav-link'>
+                        {name}
+                    </Link>
+                </li>
+                
             );
         }
     }
 }
 
 export default LinkItem;
+
+// <li key={name + "-list-item"}>

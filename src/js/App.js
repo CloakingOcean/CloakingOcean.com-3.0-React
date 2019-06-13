@@ -8,13 +8,19 @@ import Gaming from './Gaming';
 import Music from './Music';
 import AppRouter from './AppRouter';
 
-const pageList = [
-    {url: "/", name: "Home"},
-    {url: "/java/", name: "Java"},
-    {url: "/unity/", name: "Unity"},
-    {url: "/web/", name: "Web"},
-    {url: "/gaming/", name: "Gaming"},
-    {url: "/music/", name: "Music"},
+var currentIndex = 1;
+
+export function updateCurrentIndex(index) {
+    currentIndex = index;
+}
+
+const pageRefs = [
+    {url: "/", name: "Home", page: Home},
+    {url: "/java/", name: "Java", page: Java},
+    {url: "/unity/", name: "Unity", page: Unity},
+    {url: "/web/", name: "Web", page: Web},
+    {url: "/gaming/", name: "Gaming", page: Gaming},
+    {url: "/music/", name: "Music", page: Music},
 ];
 
 class App extends Component {
@@ -23,7 +29,7 @@ class App extends Component {
     
     render() {
         return (
-            <AppRouter pageList={pageList} />
+            <AppRouter currentIndex={currentIndex} pageRefs={pageRefs} />
         );
     }
     

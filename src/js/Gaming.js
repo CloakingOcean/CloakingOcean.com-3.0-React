@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
+import { updateCurrentIndex } from "./App";
+
 class Gaming extends Component {
+    
+    componentDidMount() {
+        updateCurrentIndex(4);
+    }
     
     render() {
         return (

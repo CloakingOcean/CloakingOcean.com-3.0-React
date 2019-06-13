@@ -1,62 +1,59 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 import LinkItem from './LinkItem';
 
-var currentIndex = 0;
-
 class AppRouter extends Component {
   
-  index = 0;
-  
   render() {
-    var linkList = this.props.pageList.map((link, index) =>
+      
+    var linkList = this.props.pageRefs.map((ref, index) =>
     {
-        var current = index === currentIndex;
-        return (<LinkItem current={current} link={link} />);
+        var current = index === this.props.currentIndex;
+        return (<LinkItem key={ref.name} current={current} link={ref} />);
     });
-    
-    var routes = this.props.pageList.map(list => {
-        if (list.url == '')  {
-            
-        }  
-    }
-    );
-    
-    var Home = this.props.home;
-    var Java = this.props.java;
-    var Unity = this.props.unity;
-    var Web = this.props.web;
-    var Gaming = this.props.gaming;
-    var Music = this.props.music;
     
     var header = 
     <nav className='navbar bg-dark navbar-dark navbar-expand'>
+    
         <div className='container-fluid'>
             <div className='navbar-header'>
                 <a href='index.html'><img className='logo navbar-brand' alt='Cloaking Ocean Logo'/> src='images/logo/logo-white.svg'></a>
             </div>
         </div>
-        <div className='container-fluid' width='100vw'>"
+        <div className='container-fluid' width='100vw'>
             <ul className='navbar-nav justify-content-end ml-auto mr-auto ml-sm-auto mr-sm-0'>
                 {linkList}
             </ul>
         </div>
     </nav>;
     
+    var currentPage;
+    
+    var routes = this.props.pageRefs.map((ref, index) => {
+        
+        // Assigns currentPage using currentIndex
+        if (this.props.currentIndex === index) {
+            currentPage = ref.page;
+        }
+        
+        // Creates Route elements for each page.
+        if (index === 0) {
+            return (<Route key={ref.name + "-route"} path="/" exact component={ref.page} />);
+        } else {
+            return (<Route key={ref.name + "-route"} path={ref.url} component={ref.page}/>);
+        }
+    });
+    
     return (
-        <Router>
-            <div>
-                {header}
-                
-                <Route path="/" exact component={Home} />
-                <Route path="/java/" component={Java}/>
-                <Route path="/unity/" component={Unity} />
-                <Route path="/web/" component={Web} />
-                <Route path="/gaming/" component={Gaming} />
-                <Route path="/music" exact component={Music} />
-            </div>
-        </Router>
+        <div>
+            <Router>
+                <div>
+                    {header}
+                    {routes}
+                </div>
+            </Router>
+        </div>
     );
   }
 }

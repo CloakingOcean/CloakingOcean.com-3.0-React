@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
+import { updateCurrentIndex } from "./App";
+
 class Music extends Component {
+    
+    componentDidMount() {
+        updateCurrentIndex(5);
+    }
     
     render() {
         return (
