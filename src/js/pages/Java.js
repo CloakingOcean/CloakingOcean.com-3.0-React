@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import spaceInvaders from "../images/examples/Space Invaders/space-invaders-demo.gif";
-import whewheo from "../images/examples/Whewheo/whewheo-demonstration.gif";
+import spaceInvaders from "../../images/examples/Space Invaders/space-invaders-demo.gif";
+import whewheo from "../../images/examples/Whewheo/whewheo-demonstration.gif";
 
-import { updateCurrentIndex } from "./App";
+import { updateCurrentIndex } from "../App";
 
 class Java extends Component {
   componentDidMount() {

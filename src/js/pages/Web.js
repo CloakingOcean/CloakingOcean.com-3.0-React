@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import cssTut from "../images/examples/Web Development/1/500x500.png";
-import exitium from "../images/examples/Web Development/2/500x500.png";
-import cloaking from "../images/examples/Web Development/3/500x500.png";
+import cssTut from "../../images/examples/Web Development/1/500x500.png";
+import exitium from "../../images/examples/Web Development/2/500x500.png";
+import cloaking from "../../images/examples/Web Development/3/500x500.png";
 
-import { updateCurrentIndex } from "./App";
+import { updateCurrentIndex } from "../App";
 
 class Web extends Component {
     

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import App from './App';
-import historyDemo from "../images/examples/History Mystery/history-mystery-demo.gif";
+import App from '../App';
+import historyDemo from "../../images/examples/History Mystery/history-mystery-demo.gif";
 
-import { updateCurrentIndex } from "./App";
+import { updateCurrentIndex } from "../App";
 
 class Unity extends Component {
     
