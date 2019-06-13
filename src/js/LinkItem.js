@@ -8,15 +8,15 @@ class LinkItem extends Component {
         var name = this.props.link.name;
         var current = this.props.current;
         
-        if (current === true) {
-            return (
-                <li key={name + "-list-item"}>
-                    <Link to="/" className='nav-item nav-link text-muted' disabled='disabled'>
-                        {name}
-                    </Link>
-                </li>
-            );
-        } else {
+        // if (current === true) {
+        //     return (
+        //         <li key={name + "-list-item"}>
+        //             <Link to="/" className='nav-item nav-link text-muted' disabled='disabled'>
+        //                 {name}
+        //             </Link>
+        //         </li>
+        //     );
+        // } else {
             
             return (
                 
@@ -27,7 +27,7 @@ class LinkItem extends Component {
                 </li>
                 
             );
-        }
+        // }
     }
 }
 
