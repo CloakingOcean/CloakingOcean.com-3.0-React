@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 
-import aPlus from "../images/certifications/a_plus_comp_maintenance.png";
-import program from "../images/certifications/comp_programming.png";
-import info from "../images/certifications/information_tech_pathway.png";
-import network from "../images/certifications/network_fundamentals.png";
-import pcpro from "../images/certifications/pc_pro.png"
+import aPlus from "../../images/certifications/a_plus_comp_maintenance.png";
+import program from "../../images/certifications/comp_programming.png";
+import info from "../../images/certifications/information_tech_pathway.png";
+import network from "../../images/certifications/network_fundamentals.png";
+import pcpro from "../../images/certifications/pc_pro.png"
+
+import { updateCurrentIndex } from "../App";
 
 class Home extends Component {
+  
+  componentDidMount() {
+      updateCurrentIndex(0);
+  }
+  
   render() {
     return (
         <div>
