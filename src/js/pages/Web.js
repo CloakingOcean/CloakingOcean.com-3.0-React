@@ -60,7 +60,7 @@ class Web extends Component {
                     <section>
                         <h2>Cloaking_Ocean.com (Old)</h2>
                         <p>
-                            This was the previous rendition of my portfolio website! You can get the{' '}<a href="https://drive.google.com/open?id=1XrSP2rn2KCj6JumjmEzufjBhtu0B8bnq" target="_blank" rel="noopener noreferrer">Website Files</a>
+                            This was the previous rendition of my portfolio website! You can get the{' '}<a href="https://drive.google.com/open?id=1XrSP2rn2KCj6JumjmEzufjBhtu0B8bnq" target="_blank" rel="noopener noreferrer">Website Files</a>{' '}
                             from clicking the link! A significant change I've made from this earlier version is including{' '}
                             <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>! Bootstrap is a JavaScript framework
                             that comes included with many CSS and JavaScript components that are incredibly polished and increase a programmer's efficiency
