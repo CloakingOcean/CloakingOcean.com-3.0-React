@@ -65,8 +65,9 @@ class Web extends Component {
                             <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>! Bootstrap is a JavaScript framework
                             that comes included with many CSS and JavaScript components that are incredibly polished and increase a programmer's efficiency
                             drastically! These libraries and frameworks are vast and varied in the web development world, and I'm just scraping the surface!
-                            Also, the color scheme between versions has also been substantially improved in my eyes! When this project is finished, I'll
-                            add a GitLab link here for the new website.
+                            Also, the color scheme between versions has also been substantially improved in my eyes! The{' '}
+                            <a href="https://github.com/CloakingOcean/CloakingOcean.com-3.0-React" target="_blank" rel="noopener noreferrer">Website Files</a>{' '}
+                            for the new and improved version can be found here!
                         </p>
                     </section>
                     
