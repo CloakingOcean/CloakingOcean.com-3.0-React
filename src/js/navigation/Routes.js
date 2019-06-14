@@ -16,7 +16,7 @@ class Routes extends Component {
             }
         });
 
-        return ({ routes });
+        return (routes);
     }
 }
 

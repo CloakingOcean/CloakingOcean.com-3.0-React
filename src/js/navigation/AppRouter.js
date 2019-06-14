@@ -11,7 +11,7 @@ class AppRouter extends Component {
             <div>
                 <Router>
                     <div>
-                        <Header linkList={this.props.pageRefs} />
+                        <Header pageRefs={this.props.pageRefs}/>
                         <Routes pageRefs={this.props.pageRefs}/>
                     </div>
                 </Router>
