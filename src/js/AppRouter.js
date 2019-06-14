@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import LinkItem from './LinkItem';
 import Logo from './Logo';
@@ -24,14 +24,7 @@ class AppRouter extends Component {
         
     </nav>;
     
-    var currentPage;
-    
     var routes = this.props.pageRefs.map((ref, index) => {
-        
-        // Assigns currentPage using currentIndex
-        if (this.props.currentIndex === index) {
-            currentPage = ref.page;
-        }
         
         // Creates Route elements for each page.
         if (index === 0) {
