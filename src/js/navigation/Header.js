@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import Logo from './Logo';
-import Navigationf from './Navigation';
+import Navigation from './Navigation';
+import LinkItem from './LinkItem';
 
 class Header extends Component {
     

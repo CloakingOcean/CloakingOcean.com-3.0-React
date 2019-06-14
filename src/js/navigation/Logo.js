@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import logoImg from "../images/logo/logo-white.svg";
+import logoImg from "../../images/logo/logo-white.svg";
 
 class Logo extends Component {
     
