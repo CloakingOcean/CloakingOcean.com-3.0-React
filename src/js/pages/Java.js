@@ -6,13 +6,13 @@ import whewheo from "../../images/examples/Whewheo/whewheo-demonstration.gif";
 import { updateCurrentIndex } from "../App";
 
 class Java extends Component {
-  componentDidMount() {
-    updateCurrentIndex(1);
-  }
-  
-  render() {
-    return (
-        <div>
+    componentDidMount() {
+        updateCurrentIndex(1);
+    }
+
+    render() {
+        return (
+            <div>
             <header className="header" data-id="1">
                 {/* To be filled in with javascript from writeHeader() method */}
             </header>
@@ -73,8 +73,8 @@ class Java extends Component {
                 </section>
             </div>
         </div>
-    );
-  }
+        );
+    }
 }
 
 export default Java;

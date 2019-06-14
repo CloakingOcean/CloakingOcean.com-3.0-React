@@ -2,7 +2,7 @@ header {
     margin-bottom: 1rem;
 
     @include media-breakpoint-up(sm) {
-        position: -webkit-sticky; /* Safari */
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
         z-index: 1;

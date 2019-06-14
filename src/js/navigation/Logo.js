@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import logoImg from "../../images/logo/logo-white.svg";
 
 class Logo extends Component {
-    
+
     render() {
         return (
             <div className='container-fluid'>

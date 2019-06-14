@@ -7,11 +7,11 @@ import cloaking from "../../images/examples/Web Development/3/500x500.png";
 import { updateCurrentIndex } from "../App";
 
 class Web extends Component {
-    
+
     componentDidMount() {
         updateCurrentIndex(3);
     }
-    
+
     render() {
         return (
             <div>
@@ -76,6 +76,6 @@ class Web extends Component {
             </div>
         );
     }
-    
+
 }
 export default Web;

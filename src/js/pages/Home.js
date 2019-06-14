@@ -9,14 +9,14 @@ import pcpro from "../../images/certifications/pc_pro.png"
 import { updateCurrentIndex } from "../App";
 
 class Home extends Component {
-  
-  componentDidMount() {
-      updateCurrentIndex(0);
-  }
-  
-  render() {
-    return (
-        <div>
+
+    componentDidMount() {
+        updateCurrentIndex(0);
+    }
+
+    render() {
+        return (
+            <div>
             <header className="header" data-id="0">
                 {/* To be filled in with javascript from writeHeader() method */}
             </header>
@@ -130,8 +130,8 @@ class Home extends Component {
                 </div>{/* row */}
             </div>{/* Container */}
         </div>
-    );
-  }
+        );
+    }
 }
 
 export default Home;

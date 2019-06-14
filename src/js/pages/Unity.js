@@ -5,11 +5,11 @@ import historyDemo from "../../images/examples/History Mystery/history-mystery-d
 import { updateCurrentIndex } from "../App";
 
 class Unity extends Component {
-    
+
     componentDidMount() {
         updateCurrentIndex(2);
     }
-    
+
     render() {
         return (
             <div>

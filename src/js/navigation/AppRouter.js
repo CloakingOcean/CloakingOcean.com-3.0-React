@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from './Header';
 import Routes from './Routes';
 
 class AppRouter extends Component {
-  
+
     render() {
         return (
             <div>

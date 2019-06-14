@@ -5,14 +5,13 @@ import Navigation from './Navigation';
 import LinkItem from './LinkItem';
 
 class Header extends Component {
-    
+
     render() {
-        var linkList = this.props.pageRefs.map((ref, index) =>
-        {
+        var linkList = this.props.pageRefs.map((ref, index) => {
             var current = index === this.props.currentIndex;
             return (<LinkItem key={ref.name} current={current} link={ref} />);
         });
-        
+
         return (
             <nav className='navbar bg-dark navbar-dark navbar-expand'>
                 
