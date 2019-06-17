@@ -1,6 +1,8 @@
+'use strict';
+
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
 
@@ -10,17 +12,30 @@ gulp.task('js', function() {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
+
+sass.compiler = require('node-sass');
+
+var sourcemaps = require('gulp-sourcemaps');
+
 gulp.task('sass', function () {
-    return sass('process/sass/style.scss', {
-      sourcemap: true,
-      style: 'compressed'
-    })
-    .on('error', function (err) {
-        console.error('Error!', err.message);
-    })
+  return gulp.src('process/sass/style.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('src/css'));
 });
+
+// gulp.task('sass', function () {
+//     return sass('process/sass/style.scss', {
+//       sourcemap: true,
+//       style: 'compressed'
+//     })
+//     .on('error', function (err) {
+//         console.error('Error!', err.message);
+//     })
+//     .pipe(sourcemaps.write())
+//     .pipe(gulp.dest('src/css'));
+// });
 
 gulp.task('watch', function() {
   gulp.watch('src/*.js', gulp.series('js'));
