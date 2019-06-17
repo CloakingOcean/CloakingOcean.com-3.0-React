@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
-import aPlus from "../../images/certifications/a_plus_comp_maintenance.png";
-import program from "../../images/certifications/comp_programming.png";
-import info from "../../images/certifications/information_tech_pathway.png";
-import network from "../../images/certifications/network_fundamentals.png";
-import pcpro from "../../images/certifications/pc_pro.png"
+import ControlledCarousel from "../util/ControlledCarousel.js";
 
 import { updateCurrentIndex } from "../App";
 
@@ -26,49 +22,10 @@ class Home extends Component {
                     <h1>Welcome to CloakingOcean.com!</h1>
                 </div>
 
-                <div className="carousel slide" id="certifications" data-wrap="true" data-ride="carousel">
-                    <div className="carousel-inner">
-
-                        <div className="carousel-item active">
-                            <img className="img-fluid" src={aPlus} alt="A Plus Certificate"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img className="img-flud" src={program} alt="Java Level Two Programming Certificate"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img className="img-flud" src={info} alt="Information Technology Pathways Certificate"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img className="img-flud" src={network} alt="Network Fundamentals Certificate"/>
-                        </div>
-
-                        <div className="carousel-item">
-                            <img className="img-flud" src={pcpro} alt="PC Pro Certificate"/>
-                        </div>
-
-                        {/* Carousel Control Buttons */}
-                        <a className="carousel-control-prev" href="#certifications"
-                            role="button" data-slide="prev">
-
-                            <span className="carousel-control-prev-icon"
-                            aria-hidden="true">
-                                <span className="sr-only">Previous</span>
-                            </span>
-                        </a>
-
-                        <a className="carousel-control-next" href="#certifications"
-                            role="button" data-slide="next">
-
-                            <span className="carousel-control-next-icon"
-                            aria-hidden="true">
-                                <span className="sr-only">Next</span>
-                            </span>
-                        </a>
-                    </div>{/* Carousel Inner */}
-                </div>{/* Carousel: Main Component */}
+                
+                {/* Carousel */}
+                <ControlledCarousel />
+                
             </div>{/* Container */}
 
             <div className="container">
@@ -135,3 +92,48 @@ class Home extends Component {
 }
 
 export default Home;
+
+
+// <div className="carousel slide" id="certifications" data-wrap="true" data-ride="carousel">
+//     <div className="carousel-inner">
+
+//         <div className="carousel-item active">
+//             <img className="img-fluid" src={aPlus} alt="A Plus Certificate"/>
+//         </div>
+
+//         <div className="carousel-item">
+//             <img className="img-flud" src={program} alt="Java Level Two Programming Certificate"/>
+//         </div>
+
+//         <div className="carousel-item">
+//             <img className="img-flud" src={info} alt="Information Technology Pathways Certificate"/>
+//         </div>
+
+//         <div className="carousel-item">
+//             <img className="img-flud" src={network} alt="Network Fundamentals Certificate"/>
+//         </div>
+
+//         <div className="carousel-item">
+//             <img className="img-flud" src={pcpro} alt="PC Pro Certificate"/>
+//         </div>
+
+//         {/* Carousel Control Buttons */}
+//         <a className="carousel-control-prev" href="#certifications"
+//             role="button" data-slide="prev">
+
+//             <span className="carousel-control-prev-icon"
+//             aria-hidden="true">
+//                 <span className="sr-only">Previous</span>
+//             </span>
+//         </a>
+
+//         <a className="carousel-control-next" href="#certifications"
+//             role="button" data-slide="next">
+
+//             <span className="carousel-control-next-icon"
+//             aria-hidden="true">
+//                 <span className="sr-only">Next</span>
+//             </span>
+//         </a>
+//     </div>{/* Carousel Inner */}
+// </div>{/* Carousel: Main Component */}
