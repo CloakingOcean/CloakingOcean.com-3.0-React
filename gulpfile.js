@@ -6,12 +6,6 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
 
-gulp.task('js', function() {
-  return gulp.src('src/*.js')
-    .pipe(jshint('./.jshintrc'))
-    .pipe(jshint.reporter('jshint-stylish'));
-});
-
 
 sass.compiler = require('node-sass');
 
@@ -38,7 +32,6 @@ gulp.task('sass', function () {
 // });
 
 gulp.task('watch', function() {
-  gulp.watch('src/*.js', gulp.series('js'));
   gulp.watch('process/sass/**/*', gulp.series('sass'));
 });
 
