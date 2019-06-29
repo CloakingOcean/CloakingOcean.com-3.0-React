@@ -7,8 +7,7 @@ import LinkItem from './LinkItem';
 class Header extends Component {
 
     render() {
-        var linkList = this.props.pageRefs.map((ref, index) => {
-            var current = index === this.props.currentIndex;
+        var linkList = this.props.pageRefs.map((ref) => {
             return (<LinkItem key={ref.name} current={current} link={ref} />);
         });
 

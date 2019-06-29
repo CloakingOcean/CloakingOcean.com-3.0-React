@@ -8,12 +8,6 @@ import Gaming from './pages/Gaming';
 import Music from './pages/Music';
 import AppRouter from './navigation/AppRouter';
 
-var currentIndex = 1;
-
-export function updateCurrentIndex(index) {
-    currentIndex = index;
-}
-
 const pageRefs = [
     { url: "/", name: "Home", page: Home },
     { url: "/java/", name: "Java", page: Java },
@@ -29,7 +23,7 @@ class App extends Component {
 
     render() {
         return (
-            <AppRouter currentIndex={currentIndex} pageRefs={pageRefs} />
+            <AppRouter pageRefs={pageRefs} />
         );
     }
 

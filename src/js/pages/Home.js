@@ -2,13 +2,7 @@ import React, { Component } from 'react';
 
 import ControlledCarousel from "../util/ControlledCarousel.js";
 
-import { updateCurrentIndex } from "../App";
-
 class Home extends Component {
-
-    componentDidMount() {
-        updateCurrentIndex(0);
-    }
 
     render() {
         return (
