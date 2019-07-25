@@ -8,7 +8,7 @@ class Header extends Component {
 
     render() {
         var linkList = this.props.pageRefs.map((ref) => {
-            return (<LinkItem key={ref.name} current={current} link={ref} />);
+            return (<LinkItem key={ref.name} link={ref} />);
         });
 
         return (
