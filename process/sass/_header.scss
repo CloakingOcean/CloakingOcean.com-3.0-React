@@ -34,16 +34,22 @@ header {
         font-size: 17px;
     }
     
-    .icon {
+    // .icon {
+    //     display: none;
+    // }
+}
+
+@media screen and (max-width: 576px) {
+    body {
         display: none;
     }
 }
 
 /* When the screen is less than sm(576px) pixels wide,
 hide all links. Show the link that contains should 
-open and close the topnav (.icon) */
-@media screen and (max-width: $sm) {
-    .topnav {
+open and close the topNav (.icon) */
+@media screen and (max-width: 576px) {
+    .topNav {
         
         a {
             display: none;
@@ -56,12 +62,12 @@ open and close the topnav (.icon) */
     }
 }
 
-/* The "responsive" class is added to the topnav with 
+/* The "responsive" class is added to the topNav with 
 JavaScript when the user clicks on the icon. This 
-class makes the topnav look good on small screens 
+class makes the topNav look good on small screens 
 (display the links vertically instead of horizontally) */
-@media screen and (max-width: $sm) {
-    .topnav.responsive {
+@media screen and (max-width: 576px) {
+    .topNav.responsive {
         position: relative;
         a.icon {
             position: absolute;
