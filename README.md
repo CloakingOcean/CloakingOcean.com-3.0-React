@@ -1,4 +1,4 @@
-# CloakingOcean.com
+# [CloakingOcean.com](https://cloakingocean.com/ "Cloaking Ocean Website")
 CloakingOcean.com is a personal, custom coded portfolio I made for myself, Shawn Whitaker!
 It showcases many different aspects of my life.
 
@@ -21,9 +21,7 @@ to increase my skills and understanding in this aspect as well!
 With a majority of my life being filled with music, I've learned how to perform music myself by playing the piano!
 
 ### Scripts
-To package together the sass files, use "gulp sass".
-
-Afterwards, use "npm start" to start the app!
+Once you have installed all of the packages using npm, use npm start. This will first package all of the sass files and then start the server.
 
 ### Development
 I initially created this webpage as an introduction to Bootstrap using mainly HTML and CSS with a small portion of
