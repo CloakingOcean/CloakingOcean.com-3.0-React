@@ -21,7 +21,7 @@ to increase my skills and understanding in this aspect as well!
 With a majority of my life being filled with music, I've learned how to perform music myself by playing the piano!
 
 ### Scripts
-Once you have installed all of the packages using npm, use npm start. This will first package all of the sass files and then start the server.
+Once you have installed all of the packages using npm install, use npm start. This will first package all of the sass files and then start the server.
 
 ### Development
 I initially created this webpage as an introduction to Bootstrap using mainly HTML and CSS with a small portion of
