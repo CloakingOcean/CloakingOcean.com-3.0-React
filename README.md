@@ -25,5 +25,4 @@ Once you have installed all of the packages using npm install, use npm start. Th
 
 ### Development
 I initially created this webpage as an introduction to Bootstrap using mainly HTML and CSS with a small portion of
-JavaScript. This project, however, converts the webpage into a quick and responsive React app! This was my first 
-major project with React and I look forward to improving my website's content and functionality as I continue to learn!
+JavaScript. This project, however, converts the webpage into a React app! And while this increased the performance after the page completely loaded (ex. switching pages), during this downloading process it seems take much longer compared to version 2.0. I plan to optimize the pictures for smaller devices in the future. This was my first major project with React and I look forward to improving my website's content and functionality as I continue to learn!
